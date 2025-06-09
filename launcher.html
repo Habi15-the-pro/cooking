@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Launch Game</title>
+    <script>
+      window.onload = function() {
+        var newTab = window.open("about:blank", "_blank");
+        if (newTab) {
+          newTab.document.write('<iframe src="https://scratch.mit.edu/" style="border:none;width:100vw;height:100vh;"></iframe>');
+        } else {
+          alert("Permite las ventanas emergentes para abrir el juego.");
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <p>Cargando...</p>
+  </body>
+</html>
